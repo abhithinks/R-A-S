@@ -1,0 +1,16 @@
+.card {
+    
+    border:2px;
+    width:500px;
+    padding:50px;
+    margin: 50px 400px;
+   
+    background: rgb(236, 174, 208);
+    background: linear-gradient(75deg, rgb(228, 173, 207) 0% hsla(260, 29%, 36%,1) 100%);
+}
+h1{
+    color:tomato;
+}
+p{
+    color: white;
+}

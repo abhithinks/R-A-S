@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <h1 style="text-align: center;">Please fill the below form to Deny the Employee's Leave Request</h1>
+    <div class="col-md-6 text-left bg-white rounded shadow py-3">
+  
+  
+  
+      <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+  
+        <div class="form-group">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Manager ID</label>
+            <input type="text" class="form-control" formControlName="managerid" id="username" aria-describedby="emailHelp">
+            
+             
+              <!-- <span>This Username is not allowed!! </span> -->
+            
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Reason For request approval</label>
+            <input type="email" class="form-control" formControlName="status" id="email" aria-describedby="emailHelp">
+            
+          </div>
+        </div>
+  
+        <button type="submit" (click)="postleavetDetails()" class="btn btn-primary">Submit</button>
+      </form>
+  
+    </div>
+  </div>

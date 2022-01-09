@@ -1,0 +1,177 @@
+{
+  "posts": [
+    {
+      "username": "Abhishek Verma",
+      "email": "abhiverma4481@gmail.com",
+      "empid": "sdfghj",
+      "start": "2022-01-05T18:30:00.000Z",
+      "category": "Women",
+      "end": "2022-01-09",
+      "id": 6
+    },
+    {
+      "username": "qwertghyj",
+      "email": "asdfghjkl",
+      "empid": "sdfghjkl;",
+      "start": "2022-01-05T18:30:00.000Z",
+      "category": "Women",
+      "end": null,
+      "id": 7
+    },
+    {
+      "username": "Abhishek Verma",
+      "email": "abhiverma4481@gmail.com",
+      "empid": "sdfg",
+      "start": "2022-01-04T18:30:00.000Z",
+      "category": "Women",
+      "end": "2022-01-06T18:30:00.000Z",
+      "id": 8
+    },
+    {
+      "username": "jayash Verma",
+      "email": "abhiverma4481@gmail.com",
+      "empid": "2",
+      "start": "2022-01-06T18:30:00.000Z",
+      "category": "others",
+      "end": "2022-01-13T18:30:00.000Z",
+      "id": 9
+    },
+    {
+      "username": "Abhishek Verma",
+      "email": "abhiverma4481@gmail.com",
+      "empid": "1223",
+      "start": "2022-01-06T18:30:00.000Z",
+      "category": "Family",
+      "end": "2022-01-13T18:30:00.000Z",
+      "id": 11
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "ayush",
+      "email": "ayu@gmail.com",
+      "password": "123456",
+      "mobile": 9999999999,
+      "id": 1
+    },
+    {
+      "fullname": "Rasika",
+      "email": "ras@gmail.com",
+      "password": "123456",
+      "mobile": 9839292127,
+      "id": 2
+    },
+    {
+      "fullname": "Rohit gupta",
+      "email": "rk@gmail.com",
+      "password": "1245",
+      "mobile": 7838633196,
+      "category": "manager",
+      "id": 3
+    },
+    {
+      "fullname": "Parth",
+      "email": "p@gmail.com",
+      "password": "321",
+      "mobile": 987654321,
+      "category": "employee",
+      "id": 4
+    },
+    {
+      "fullname": "manish",
+      "email": "m@gmail.com",
+      "password": "123",
+      "mobile": 4552121221,
+      "category": "employee",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "holidayname": "New Year",
+      "date": "1st January 2022",
+      "id": 1
+    },
+    {
+      "holidayname": "New Year",
+      "date": "1st January 2022",
+      "id": 1
+    },
+    {
+      "holidayname": "New Year",
+      "date": "1st January 2022",
+      "id": 1
+    },
+    {
+      "holidayname": "New Year",
+      "date": "1st January 2022",
+      "id": 1
+    },
+    {
+      "holidayname": "New Year",
+      "date": "1st January 2022",
+      "id": 1
+    },
+    {
+      "holidayname": "New Year",
+      "date": "1st January 2022",
+      "id": 1
+    },
+    {
+      "holidayname": "New Year",
+      "date": "1st January 2022",
+      "id": 1
+    }
+  ],
+  "leave": [
+    {
+      "username": "Anil Jhumar",
+      "email": "asd@gmail.com",
+      "empid": "12345",
+      "description": "2022-01-08",
+      "category": "Men",
+      "end": "2022-01-09",
+      "status1": "accepted",
+      "status2": "accepted",
+      "id": 5
+    },
+    {
+      "username": "ankur",
+      "email": "a@gmail.com",
+      "empid": "65",
+      "start": "2022-01-13T18:30:00.000Z",
+      "category": "Family",
+      "end": "2022-01-20T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    }
+  ],
+  "employeeList": [
+    {
+      "empId": "1",
+      "empName": "Rasika Joshi",
+      "empPassword": "rasika",
+      "empEmail": "rasika@gmail.com",
+      "empPhone": "8585858585",
+      "jobTitle": "Dot Net Developer",
+      "department": "Backend",
+      "salary": 55000,
+      "totalLeaves": 15,
+      "leavesTaken": 0
+    }
+  ],
+  "leaveList": [
+    {
+      "managerid": "",
+      "status": ""
+    }
+  ]
+}

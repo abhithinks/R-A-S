@@ -1,0 +1,30 @@
+.example-events {
+    height: 200px;
+    border: 1px solid #555;
+    overflow: auto;
+  }
+  body {
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    color:#FECDAA;
+    font-size: 30px;
+}
+
+.btn {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+li{
+    font-size: 20px;
+    color: white;
+}

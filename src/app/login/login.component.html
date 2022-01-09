@@ -1,0 +1,56 @@
+<div class="jumbotron jumbotron-fluid bg-dark text-center">
+    
+    <div class="container">
+        
+      <h1 class="display-4">R-A-S Attendance Platform</h1>
+      <p class="lead">We deliver all your professional needs.</p>
+    </div>
+   
+  </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h3>Please enter email and password!</h3>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <span class="text-danger" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">*Email Id is required</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                        <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="category">Select Role</label>
+                        <select class="form-control" id="category" formControlName="category">
+                          <option value=""> </option>
+                          <option value="employee"> Employee </option>
+                          <option value="manager"> Manager</option>
+                          
+                        </select>
+                      </div>
+                    
+                   <div class="mb-3">
+                    <button type="submit" [disabled]="!loginForm.valid"  class="btn btn-dark">Login</button>
+                   </div>
+                   <!-- <div>
+                    <button type="submit" [disabled]="!loginForm.valid"  class="btn btn-dark">Login Employee</button>
+                   </div> -->
+                      
+                </form>
+                <a style="color: white; margin-top: 10px;" routerLink="/signup">New User? Click to signup!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

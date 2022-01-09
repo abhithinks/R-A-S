@@ -1,0 +1,54 @@
+body {
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    
+}
+
+
+
+h1, h2, h4, h5 {
+    color:#FECDAA;
+    font-size: 30px;
+}
+
+.btn {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+li{
+    font-size: 20px;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%
+}
+
+.bg-black {
+    background: #000
+}
+
+.skill-block {
+    width: 30%
+}
+
+@media (min-width: 991px) and (max-width:1200px) {
+    .skill-block {
+        padding: 32px !important
+    }
+}
+
+@media (min-width: 1200px) {
+    .skill-block {
+        padding: 56px !important
+    }
+}
+
+body {
+    background-color: #eeeeee
+}
