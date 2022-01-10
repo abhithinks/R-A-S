@@ -92,14 +92,14 @@
   <h3>Please Mark Your Attendence</h3>
   <form class="d-flexm" [formGroup]="myLoginForm">
     
-    <input matInput [matDatepicker]="picker" [min]="minLoginDate" [max]="maxLoginDate" formControlName="login" >
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
+    <input matInput [matDatepicker]="picker1" [min]="minLoginDate" [max]="maxLoginDate" formControlName="login" >
+    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+    <mat-datepicker #picker1></mat-datepicker>
     <button class="btn btn-outline-success" (click)="getFormattedDated()" type="submit">Login</button>
     &nbsp;&nbsp;
-    <input matInput [matDatepicker]="picker" [min]="minLogoutDate" [max]="maxLogoutDate" formControlName="logout" >
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
+    <input matInput [matDatepicker]="picker2" [min]="minLogoutDate" [max]="maxLogoutDate" formControlName="logout" >
+    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+    <mat-datepicker #picker2></mat-datepicker>
     <button class="btn btn-outline-danger" (click)="getlogoutDated()" type="submit">Logout</button>
   </form>
 </div>
