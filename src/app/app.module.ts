@@ -25,6 +25,8 @@ import { DefaultModule } from './layouts/default/default.module';
 import { AboutComponent } from './about/about.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UpdateComponent } from './modules/update/update.component';
+import { ManagerdetailComponent } from './modules/managerdetail/managerdetail.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 
@@ -49,6 +51,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AboutComponent,
     ProfileComponent,
     UpdateComponent,
+    ManagerdetailComponent,
     
     
     
@@ -70,7 +73,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatNativeDateModule,
     MatFormFieldModule,
     MatInputModule,
-    DefaultModule
+    DefaultModule,
+    MatDividerModule
   
   ],
   providers: [ApiService, DesignutilityService],

@@ -8,6 +8,7 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { ListComponent } from './modules/list/list.component';
+import { ManagerdetailComponent } from './modules/managerdetail/managerdetail.component';
 import { PostsComponent } from './modules/posts/posts.component';
 import { UpdateComponent } from './modules/update/update.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -47,7 +48,8 @@ const routes: Routes = [
       {path: 'dashboard', component:DashboardComponent},
       {path: 'posts', component:PostsComponent},
       {path: 'list', component:ListComponent},
-       {path:'update' , component: UpdateComponent}
+       {path:'update' , component: UpdateComponent},
+       {path:'managerDetails' , component: ManagerdetailComponent}
 
     ]
   }

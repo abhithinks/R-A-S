@@ -1,0 +1,28 @@
+<h2 style="text-align: center; margin:20px ;font-size:25px; text-decoration: underline;">List Of Employees</h2>
+     
+   
+  
+  <table class="table mt-3">
+    <thead>
+        <tr>
+          
+            <th scope="col">Serial No</th>
+            <th scope="col">Manager ID</th>
+            <th scope="col">Manager Name</th>
+            <th scope="col"> Email ID</th>
+            <th scope="col">phone</th>
+        
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let row of managerData ; index as i'>
+          <td>{{i+1}}</td>
+          
+          <td>{{row.id}}</td>
+          <td>{{row.name}}</td>
+          <td>{{row.email}}</td>
+          <td>{{row.phone}}</td>
+          
+        </tr>
+    </tbody>
+</table>

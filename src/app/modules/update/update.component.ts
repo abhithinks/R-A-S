@@ -9,14 +9,14 @@ import { StatusModel } from './status.module';
   styleUrls: ['./update.component.css']
 })
 export class UpdateComponent implements OnInit {
-  myReactiveForm!: FormGroup;
+  ReactiveForm!: FormGroup;
   formvalue !: FormGroup;
   StatusModelObj : StatusModel = new StatusModel();
   constructor(private formbuilder: FormBuilder,
     private api :ApiService) { }
 
   ngOnInit(): void {
-    this.myReactiveForm = new FormGroup({
+    this.ReactiveForm = new FormGroup({
       'managerid': new FormControl(null, [Validators.required]),
       'status': new FormControl(null, [Validators.required, Validators.email])
       
@@ -24,11 +24,14 @@ export class UpdateComponent implements OnInit {
     })
   }
   onSubmit(){
-    console.log(this.myReactiveForm)
+
+    console.log(this.ReactiveForm)
   }
-  postleavetDetails(){
-    this.StatusModelObj.managerid = this.myReactiveForm.value.username;
-    this.StatusModelObj.status = this.myReactiveForm.value.email;
+  postleaveDetails()
+  {
+
+    this.StatusModelObj.managerid = this.ReactiveForm.value.managerid;
+    this.StatusModelObj.status = this.ReactiveForm.value.status;
    
   
   this.api.postleave(this.StatusModelObj)
@@ -36,7 +39,7 @@ export class UpdateComponent implements OnInit {
     console.log(res);
     alert("Leave updated successfully")
    
-    this.formvalue.reset();
+    this.ReactiveForm.reset();
     
   },
   err=>{

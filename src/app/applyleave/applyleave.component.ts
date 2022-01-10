@@ -71,7 +71,7 @@ this.api.postContactUs(this.ContactUsModelObj)
   alert("Leave Detail added successfully")
   let ref = document.getElementById('cancel')
   ref?.click();
-  this.formvalue.reset();
+  this.myReactiveForm.reset();
   
 },
 err=>{
