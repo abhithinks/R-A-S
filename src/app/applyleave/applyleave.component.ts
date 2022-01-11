@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, NgForm, FormBuilder } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 import { ApiService } from '../shared/api.service';
 import { ContactUsModel } from './contactus.model';
 
@@ -17,7 +18,7 @@ export class ApplyleaveComponent implements OnInit {
   notAllowedNames=['Tapzo' , 'Abhishek'];
   ContactUsModelObj : ContactUsModel = new ContactUsModel();
   constructor(private formbuilder: FormBuilder,
-    private api :ApiService) { }
+    private api :ApiService, public toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.myReactiveForm = new FormGroup({
@@ -68,14 +69,14 @@ postContactDetails(){
 this.api.postContactUs(this.ContactUsModelObj)
 .subscribe(res=>{
   console.log(res);
-  alert("Leave Detail added successfully")
+  this.toastr.success("Leave Detail added successfully")
   let ref = document.getElementById('cancel')
   ref?.click();
   this.myReactiveForm.reset();
   
 },
 err=>{
-  alert("Something went wrong");
+  this.toastr.warning("Something went wrong");
 })
 }
 rangeFilter = (date:any) =>{

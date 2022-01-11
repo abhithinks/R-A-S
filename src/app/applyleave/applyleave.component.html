@@ -48,6 +48,13 @@
 
 
     <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Employee ID</label>
+          <input type="text" class="form-control" formControlName="empid" id="paasword">
+          <small class="text-danger" *ngIf="word && word.invalid && word.touched">Fill Employee ID!!</small>
+        </div>
+      </div>
 
       <div class="form-group">
         <div class="mb-3">
@@ -98,13 +105,7 @@
         </div>
       </div>
 
-      <div class="form-group">
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Employee ID</label>
-          <input type="password" class="form-control" formControlName="empid" id="paasword">
-          <small class="text-danger" *ngIf="word && word.invalid && word.touched">Fill Employee ID!!</small>
-        </div>
-      </div>
+      
 
       <button type="submit" (click)="postContactDetails()" class="btn btn-primary">Submit</button>
     </form>
@@ -112,3 +113,8 @@
   </div>
 </div>
 
+<div class="footer-basic">
+  <footer>
+    <p class="copyright">R-A-S Attandance Management System © 2018</p>
+  </footer>
+</div>

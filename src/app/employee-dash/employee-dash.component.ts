@@ -6,6 +6,7 @@ import { FormControl, FormGroup, Validators, NgForm, FormBuilder } from '@angula
 import { EmployeeDashModel } from './employee-dash.model';
 import { HttpClient } from '@angular/common/http';
 import { ApiService } from '../shared/api.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-employee-dash',
@@ -31,7 +32,7 @@ export class EmployeeDashComponent implements OnInit {
     this.calendarOptions.weekends = !this.calendarOptions.weekends // toggle the boolean!
   }
   constructor(private formbuilder: FormBuilder,
-    private api :ApiService) { }
+    private api :ApiService, public toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.myLoginForm = new FormGroup({
@@ -44,7 +45,7 @@ export class EmployeeDashComponent implements OnInit {
  
   getFormattedDated(){
     const todayDate = new Date();
-    alert("Your Attendance has been marked at :" + todayDate);
+    this.toastr.success("Your Attendance has been marked at :" + todayDate);
 
     this.EmployeeDashModelsObj.login = this.myLoginForm.value.login;
     this.api.postStatus(this.EmployeeDashModelsObj)
@@ -55,13 +56,13 @@ export class EmployeeDashComponent implements OnInit {
   
 },
 err=>{
-  alert("Something went wrong");
+  this.toastr.warning("Something went wrong");
 })
   
   }
   getlogoutDated(){
     const logoutDate = new Date();
-    alert("You have logged out succesfully :" + logoutDate);
+    this.toastr.warning("You have logged out succesfully :" + logoutDate);
 
     this.EmployeeDashModelsObj.logout = this.myLoginForm.value.logout;
 
@@ -73,7 +74,7 @@ err=>{
   
 },
 err=>{
-  alert("Something went wrong");
+  this.toastr.warning("Something went wrong");
 })
  
   }

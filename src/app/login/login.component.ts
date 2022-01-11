@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -16,7 +17,8 @@ export class LoginComponent implements OnInit {
   public loginForm!: FormGroup;
   user: boolean | undefined;
   a: any;
-  constructor(private formBuilder: FormBuilder, private http: HttpClient, private router:Router) { }
+  toster: any;
+  constructor(private formBuilder: FormBuilder, private http: HttpClient, private router:Router, private toastr : ToastrService) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -33,17 +35,18 @@ export class LoginComponent implements OnInit {
         return (a.email === this.loginForm.value.email && a.password === this.loginForm.value.password && a.category === this.loginForm.value.category );
       });
       if(user.category=='employee'){
-        alert("Login Success");
+        this.toastr.success('Login Success' );
         this.loginForm.reset();
         this.router.navigate(['employeeDash'])
       }
       else if(user.category=='manager'){
-        alert("Login Success");
+        this.toastr.success("Login Success");
         this.loginForm.reset();
         this.router.navigate(['admin'])
       }
       else{
-        alert("user not found");
+        this.toastr.error();
+        ("user not found");
       }
     })
 

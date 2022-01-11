@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, NgForm, FormBuilder } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 import { ApiService } from 'src/app/shared/api.service';
 import { StatusModel } from './status.module';
 
@@ -13,7 +14,7 @@ export class UpdateComponent implements OnInit {
   formvalue !: FormGroup;
   StatusModelObj : StatusModel = new StatusModel();
   constructor(private formbuilder: FormBuilder,
-    private api :ApiService) { }
+    private api :ApiService, public toastr:ToastrService) { }
 
   ngOnInit(): void {
     this.ReactiveForm = new FormGroup({
@@ -37,13 +38,13 @@ export class UpdateComponent implements OnInit {
   this.api.postleave(this.StatusModelObj)
   .subscribe(res=>{
     console.log(res);
-    alert("Leave updated successfully")
+    this.toastr.success("Leave updated successfully")
    
     this.ReactiveForm.reset();
     
   },
   err=>{
-    alert("Something went wrong");
+    this.toastr.warning("Something went wrong");
   })
   }
 }

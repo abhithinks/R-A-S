@@ -27,6 +27,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { UpdateComponent } from './modules/update/update.component';
 import { ManagerdetailComponent } from './modules/managerdetail/managerdetail.component';
 import { MatDividerModule } from '@angular/material/divider';
+import { ToastrModule } from 'ngx-toastr';
 
 
 
@@ -55,6 +56,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     
     
     
+    
    
     
     
@@ -74,7 +76,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatFormFieldModule,
     MatInputModule,
     DefaultModule,
-    MatDividerModule
+    MatDividerModule,
+    ToastrModule.forRoot()
   
   ],
   providers: [ApiService, DesignutilityService],
