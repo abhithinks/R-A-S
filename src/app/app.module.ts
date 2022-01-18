@@ -28,6 +28,10 @@ import { UpdateComponent } from './modules/update/update.component';
 import { ManagerdetailComponent } from './modules/managerdetail/managerdetail.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { ToastrModule } from 'ngx-toastr';
+import { AuthGuard } from './authentication/auth.guard';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 
@@ -53,15 +57,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     ProfileComponent,
     UpdateComponent,
     ManagerdetailComponent,
-    
-    
-    
-    
+    ContactusComponent,
    
-    
-    
-
-    
   ],
   imports: [
     BrowserModule,
@@ -77,10 +74,12 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatInputModule,
     DefaultModule,
     MatDividerModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatMenuModule,
+    MatIconModule,
   
   ],
-  providers: [ApiService, DesignutilityService],
+  providers: [ApiService, DesignutilityService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

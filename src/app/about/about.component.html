@@ -20,7 +20,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" routerLink="/applyLeave">Apply Leave</a></li>
-              <li><a class="dropdown-item"  href="#">Leave Status</a></li>
+              <li><a class="dropdown-item"  >Leave Status</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -28,7 +28,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link " routerLink="/profile">Profile</a>
+            <a style="color: white;" class="nav-link " routerLink="/profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link " routerLink="/contactUs">Contact Us</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -50,7 +53,7 @@
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner bg-info">
         <div class="carousel-item active" >
           <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
@@ -119,7 +122,7 @@
         <p class="title">CEO & Founder</p>
         <p> Demonstrated record of success in building successful teams and managing profitable operations.</p>
         <p>san@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <p><button routerLink="/contactUs" class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -132,7 +135,7 @@
         <p class="title">Developer</p>
         <p>Detail-oriented, organized and meticulous employee. Works at fast pace to meet tight deadlines. Enthusiastic team player ready to contribute to company success.</p>
         <p>devloper@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <p><button routerLink="/contactUs" class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -145,7 +148,7 @@
         <p class="title">Manager</p>
         <p>Insightful Manager with experience directing and improving operations through effective employee motivational strategies and strong policy enforcement.</p>
         <p>manager@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <p><button routerLink="/contactUs" class="button">Contact</button></p>
       </div>
     </div>
   </div>

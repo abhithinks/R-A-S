@@ -84,6 +84,30 @@
       "mobile": 4552121221,
       "category": "employee",
       "id": 5
+    },
+    {
+      "fullname": "nikita",
+      "email": "n@gmail.com",
+      "password": "32",
+      "mobile": 7878787878,
+      "category": "employee",
+      "id": 6
+    },
+    {
+      "fullname": "Afrida",
+      "email": "sdfghj@gmail.com",
+      "password": "123",
+      "mobile": 123352532,
+      "category": "employee",
+      "id": 7
+    },
+    {
+      "fullname": "anjula",
+      "email": "a@gmail.com",
+      "password": "321",
+      "mobile": 7898522222,
+      "category": "employee",
+      "id": 8
     }
   ],
   "comments": [
@@ -223,6 +247,99 @@
       "category": "Health",
       "end": "2022-01-05T18:30:00.000Z",
       "id": 25
+    },
+    {
+      "username": "Abhishek Verma",
+      "email": "abhiverma4481@gmail.com",
+      "empid": "1",
+      "start": "2022-01-12T18:30:00.000Z",
+      "category": "Health",
+      "end": "2022-01-13T18:30:00.000Z",
+      "id": 26
+    },
+    {
+      "username": null,
+      "email": null,
+      "empid": null,
+      "start": null,
+      "category": null,
+      "end": null,
+      "id": 27
+    },
+    {
+      "username": "Abhishek Verma",
+      "email": "abhiverma4481@gmail.com",
+      "empid": "1",
+      "start": "2022-01-11T18:30:00.000Z",
+      "category": "Health",
+      "end": "2022-01-13T18:30:00.000Z",
+      "id": 28
+    },
+    {
+      "username": "Suresh",
+      "email": "sur@gmail.com",
+      "empid": "25",
+      "start": "2022-01-11T18:30:00.000Z",
+      "category": "Family",
+      "end": "2022-01-12T18:30:00.000Z",
+      "id": 29
+    },
+    {
+      "username": "Manish ",
+      "email": "m@gmail.com",
+      "empid": "2 ",
+      "start": "2022-01-12T18:30:00.000Z",
+      "category": "Family",
+      "end": "2022-01-13T18:30:00.000Z",
+      "id": 30
+    },
+    {
+      "username": "Nikiita",
+      "email": "n@gmail.com",
+      "empid": "2",
+      "start": "2022-01-11T18:30:00.000Z",
+      "category": "Health",
+      "end": "2022-01-17T18:30:00.000Z",
+      "id": 31
+    },
+    {
+      "username": null,
+      "email": null,
+      "paasword": null,
+      "description": null,
+      "category": "kids",
+      "id": 32
+    },
+    {
+      "username": null,
+      "email": null,
+      "paasword": null,
+      "description": null,
+      "category": "kids",
+      "id": 33
+    },
+    {
+      "username": "Abhishek Verma",
+      "email": "abhiverma4481@gmail.com",
+      "paasword": "sdfgh",
+      "description": "shopping",
+      "category": "Women",
+      "id": 34
+    },
+    {
+      "empname": "Abhishek Verma",
+      "email": "abhiverma4481@gmail.com",
+      "description": "eeee",
+      "id": 35
+    },
+    {
+      "username": "Abhishek Verma",
+      "email": "abhiverma4481@gmail.com",
+      "empid": "1",
+      "start": "2022-01-12T18:30:00.000Z",
+      "category": "Health",
+      "end": "2022-01-13T18:30:00.000Z",
+      "id": 36
     }
   ],
   "employeeList": [
@@ -388,6 +505,318 @@
       "login": "",
       "logout": null,
       "empid": ""
+    },
+    {
+      "id": "v0wMBv4",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "RxhUxWx",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "H0r9uy3",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "XGpKwpy",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "lXT5vTK",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "IO5uGGa",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "bAl17rw",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "ebFlmuO",
+      "login": "2022-01-10T18:30:00.000Z",
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "pk2RKrG",
+      "login": "2022-01-10T18:30:00.000Z",
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "SozJ7v2",
+      "login": "2022-01-09T18:30:00.000Z",
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "be--gBI",
+      "login": "2022-01-10T18:30:00.000Z",
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "BDQoFZW",
+      "login": "2022-01-10T18:30:00.000Z",
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "e8dngLE",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "jcuJ_7Y",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "-089E-w",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "zkJjTea",
+      "login": "2022-01-11T18:30:00.000Z",
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "K2dbfIc",
+      "login": "2022-01-11T18:30:00.000Z",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "a0WWX23",
+      "login": "2022-01-11T18:30:00.000Z",
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "mICB6Pw",
+      "login": "2022-01-11T18:30:00.000Z",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "0lje5NM",
+      "login": "",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "D_lJ8E1",
+      "login": "",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "HuAcM_0",
+      "login": "",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "lwjTRk8",
+      "login": "",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "FNQ4nqL",
+      "login": "",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "6mZ43d0",
+      "login": "",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "HcudnRM",
+      "login": "",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "aEl5Vln",
+      "login": "",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "PGip3PA",
+      "login": "",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "EaOU4ui",
+      "login": "2022-01-11T18:30:00.000Z",
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "r4gbJnu",
+      "login": "2022-01-11T18:30:00.000Z",
+      "logout": "2022-01-11T18:30:00.000Z",
+      "empid": ""
+    },
+    {
+      "id": "nhKjpQa",
+      "login": "2022-01-11T18:30:00.000Z",
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "oWkGBg2",
+      "login": "2022-01-11T18:30:00.000Z",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "ekv-Wb5",
+      "login": "",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "WMqLm7h",
+      "login": "",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "V_wWatE",
+      "login": "",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "t9mnz-0",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "TxrtvVc",
+      "login": "",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "uH5VENa",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "VmAmsqr",
+      "login": "",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "3RpdBoQ",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "RWrKjdO",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "DReqAWp",
+      "login": null,
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "empname": "Abhishek Verma",
+      "email": "abhiverma4481@gmail.com",
+      "description": "asdfgvbhnjkl;'",
+      "id": "Yebyay7"
+    },
+    {
+      "id": "5Xgh8Nf",
+      "login": "",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "5f_a8eu",
+      "login": "",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "mMUOLcU",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "id": "nTWUa7E",
+      "login": "",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "m5NbPBU",
+      "login": "",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "Ii035J7",
+      "login": null,
+      "logout": "",
+      "empid": ""
+    },
+    {
+      "empname": "sasdsf",
+      "email": "fsgdsgd@g",
+      "description": "gdgr",
+      "id": "hmI2pAq"
+    },
+    {
+      "id": "FRDIbhM",
+      "login": "",
+      "logout": null,
+      "empid": ""
+    },
+    {
+      "id": "4NwtYFR",
+      "login": "2022-01-16T18:30:00.000Z",
+      "logout": "",
+      "empid": ""
     }
   ],
   "profile": [
@@ -450,6 +879,36 @@
       "managerid": "1",
       "status": "approve",
       "id": 12
+    },
+    {
+      "managerid": "1",
+      "status": "approve",
+      "id": 13
+    },
+    {
+      "managerid": "1",
+      "status": "Denied",
+      "id": 14
+    },
+    {
+      "managerid": "1",
+      "status": "Denied",
+      "id": 15
+    },
+    {
+      "managerid": "1",
+      "status": "approve",
+      "id": 16
+    },
+    {
+      "managerid": "1",
+      "status": "Denied",
+      "id": 17
+    },
+    {
+      "managerid": "1",
+      "status": "Denied",
+      "id": 18
     }
   ],
   "managerList": [

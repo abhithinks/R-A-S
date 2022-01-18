@@ -62,7 +62,7 @@ err=>{
   }
   getlogoutDated(){
     const logoutDate = new Date();
-    this.toastr.warning("You have logged out succesfully :" + logoutDate);
+    this.toastr.warning("You have logged out succesfully :" + logoutDate  );
 
     this.EmployeeDashModelsObj.logout = this.myLoginForm.value.logout;
 

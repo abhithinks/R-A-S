@@ -1,0 +1,115 @@
+<nav class="navbar navbar-expand-lg navbar- bg-dark">
+    <div class="container-fluid">
+      <h1 class="navbar-brand" style="margin: 5px; padding:8px;">A-M-S</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" >
+            <a class="nav-link " style="color:white;"  aria-current="page" routerLink="/employeeDash">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:white;" routerLink="/about">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Leave
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="/applyLeave">Apply Leave</a></li>
+              <li><a class="dropdown-item" >Leave Status</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" routerLink="/activity">Holiday Calender</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link " routerLink="/profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link " routerLink="/contactUs">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+  
+    </div>
+  </nav>
+
+  <div class="row justify-content-center mt-3">
+    <h1 style="text-align: center;">Contact Us</h1>
+    <div class="col-md-6 text-left bg-white rounded shadow py-3">
+
+
+
+        <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+            
+                <div class="form-group">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Employee Name</label>
+                        <input type="text" class="form-control" formControlName="empname" id="username"
+                            aria-describedby="emailHelp">
+                           <small class="text-danger" *ngIf="user && user.invalid && user.touched">
+                           <span >Please Enter the Full Name!! </span>  
+                           <!-- <span>This Username is not allowed!! </span> -->
+                            </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" formControlName="email" id="email"
+                            aria-describedby="emailHelp">
+                            <small class="text-danger" *ngIf="address && address.invalid && address.touched">Please Enter the Valid Email!!</small>   
+                    </div>
+                </div>
+           
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Description</label>
+                    <input type="textbox" class="form-control" formControlName="description" id="description"
+                        aria-describedby="emailHelp">
+                        <small class="text-danger" *ngIf="desccr && desccr.invalid && desccr.touched">Please Enter atleast 50 words!!</small>
+                </div>
+            </div>
+
+          
+           
+           
+            <button type="submit"  (click)="postContactDetails()" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+</div>
+
+<div style="display: flex; margin: 10px 450px ; ">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.162828014831!2d80.34463001487349!3d26.482701683314758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c38bcb8be106b%3A0x810c4a22ec6601e5!2sGreen%20Park%20International%20Stadium!5e0!3m2!1sen!2sin!4v1639931120853!5m2!1sen!2sin"
+    width="400" height="300" style="border:0;  border:3px solid rgb(2, 2, 2);" allowfullscreen=""
+    loading="lazy"></iframe>
+  <br>
+  <p style="margin:10px 50px;">
+    <strong>Address</strong>
+    <br> GreenPark Civil Lines
+    <br> Kanpur Uttar Pradesh
+  </p>
+  <p style="margin:10px 10px;">
+    <Strong>Phone:</Strong>
+    <br> (+91) 7838633198
+  </p>
+</div>
+
+  <div class="footer-basic">
+    <footer>
+    
+       
+        <p class="copyright">R-A-S Attandance Management System © 2018</p>
+    </footer>
+  </div>

@@ -20,7 +20,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" routerLink="/applyLeave">Apply Leave</a></li>
-            <li><a class="dropdown-item"  href="#">Leave Status</a></li>
+            <li><a class="dropdown-item" >Leave Status</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
@@ -28,7 +28,10 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link " routerLink="/profile">Profile</a>
+          <a style="color: white;" class="nav-link " routerLink="/profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link " routerLink="/contactUs">Contact Us</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -41,8 +44,8 @@
 </nav>
 
 
-<div class="row justify-content-center">
-  <h1 style="text-align: center;">Please fill the below form to Apply for Leave</h1>
+<div class="row justify-content-center mt-3">
+  <h1 style="text-align: center;">Leave Application Form</h1>
   <div class="col-md-6 text-left bg-white rounded shadow py-3">
 
 
@@ -99,8 +102,7 @@
             <mat-datepicker-toggle matSuffix [for]="mydatepicker" ></mat-datepicker-toggle>
             <mat-date-range-picker #mydatepicker ></mat-date-range-picker>
           </mat-form-field>
-          <small class="text-danger" *ngIf="desccr && desccr.invalid && desccr.touched">Please Enter atleast 50
-            words!!</small>
+          <small class="text-danger" *ngIf="desccr && desccr.invalid && desccr.touched">Please Enter atleast one day!!</small>
 
         </div>
       </div>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, NgForm, FormBuilder } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { ApiService } from 'src/app/shared/api.service';
-import { StatusModel } from './status.module';
+import { StatusModel } from './status.model';
 
 @Component({
   selector: 'app-update',

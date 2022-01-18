@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ActivityComponent } from './activity/activity.component';
 import { ApplyleaveComponent } from './applyleave/applyleave.component';
+import { AuthGuard } from './authentication/auth.guard';
+import { ContactusComponent } from './contactus/contactus.component';
 import { EmployeeDashComponent } from './employee-dash/employee-dash.component';
 import { DefaultComponent } from './layouts/default/default.component';
 import { LoginComponent } from './login/login.component';
@@ -21,6 +23,9 @@ const routes: Routes = [
   },
   {
     path:'login' , component: LoginComponent
+  },
+  {
+    path:'contactUs' , component: ContactusComponent
   },
  
   {
@@ -43,7 +48,7 @@ const routes: Routes = [
     path:'activity' , component: ActivityComponent
   },
   {
-    path:'admin' , component: DefaultComponent,
+    path:'admin' , canActivate:[AuthGuard] , component: DefaultComponent,
     children: [
       {path: 'dashboard', component:DashboardComponent},
       {path: 'posts', component:PostsComponent},

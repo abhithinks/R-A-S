@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { AuthService } from '../authentication/auth.service';
 
 
 @Component({
@@ -18,7 +19,8 @@ export class LoginComponent implements OnInit {
   user: boolean | undefined;
   a: any;
   toster: any;
-  constructor(private formBuilder: FormBuilder, private http: HttpClient, private router:Router, private toastr : ToastrService) { }
+  constructor(private formBuilder: FormBuilder, private http: HttpClient, private router:Router, private toastr : ToastrService,
+    public authserv: AuthService) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -33,6 +35,8 @@ export class LoginComponent implements OnInit {
     .subscribe(res=>{
        var user=res.find((a:any)=>{
         return (a.email === this.loginForm.value.email && a.password === this.loginForm.value.password && a.category === this.loginForm.value.category );
+        localStorage.setItem('employee','manager');
+       
       });
       if(user.category=='employee'){
         this.toastr.success('Login Success' );

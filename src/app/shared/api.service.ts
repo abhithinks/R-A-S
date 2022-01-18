@@ -55,4 +55,10 @@ export class ApiService {
     }))
  
 }
+postContactUsEmp(data : any){
+  return this.http.post<any>("http://localhost:3000/leaveList",data)
+  .pipe(map((res:any)=>{
+    return res;
+  }))
+}
 }

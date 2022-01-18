@@ -6,11 +6,19 @@ body {
 
 
 
-h1, h2, h3, h4, h5, h6 {
-    color:#FECDAA;
+
+h1, h2,  h4,  h6 {
+    color:tomato;
     font-size: 30px;
 }
-
+h5, h3 {
+color: tomato;
+font-size: 30px;
+}
+p{
+  color:black;
+  font-size: 20px;
+}
 .btn {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
